@@ -21,8 +21,10 @@ body {
 }
 .container-wide {
     width: 1790px;
-    margin: 0 auto;
-    padding: 0 180px;
+    margin-right: 0px;
+    margin-left: 70px;
+    padding-right: 280px;
+    
 }
 .row {
     display: flex;
