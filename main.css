@@ -14,6 +14,7 @@ body {
 }
 .header {
     padding-top: 64px;
+    padding-bottom: 843px;
 }
 .nav-wrapper {
     margin-bottom: 198px;
@@ -76,7 +77,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
-    transition: transform 0.2s ease-in;
+    transition: transform 0.5s cubic-bezier(0.660, 0.215, 0.295, 1.640);
 }
 .hero:hover {
     transform: translateY(-5%);
@@ -135,4 +136,89 @@ body {
     width: 16px;
     height: 24px;
     background-image: url(images/icoms/arrow_downward_24px.svg);
+}
+.container {
+    max-width: 1492px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.article {
+    display: flex;
+    justify-content: space-between;
+
+}
+.article-text {
+    padding-left: 150px;
+    max-width: 782px;
+}
+    
+
+
+.article-subtitle{
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 96px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color:#fbd784;
+}
+.article-subtitle::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color: #fbd784;
+}
+.article-title{
+    margin-bottom: 27px;
+    max-width: 555px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+    color: #ffffff; 
+
+}
+.article-text p {
+   margin-bottom: 27px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #ffffff;
+
+}
+.article-read-more {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.222;
+    color: #fbd784;
+    padding-right: 40px;
+
+}
+.article-read-more::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 16px;
+    background-image: url(images/icoms/arrow_downwards_24px.svg);
+}
+.article-img{
+
 }
