@@ -30,6 +30,9 @@ body {
 .space-between {
     justify-content: space-between;
 }
+.align-center {
+    align-items: center;
+}
 .logo {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -144,14 +147,39 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+.main {
+    margin-top: -200px;
+}
 .article {
+    margin-top: 200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
-.article-text {
+.article:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.article-text { 
+    position: relative;
     padding-left: 150px;
     max-width: 782px;
+}
+.article-text::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+    display: block;
+    content: attr(data-number);
+    width: 240px;
+    height: 240px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 240px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.1);
 }
     
 
