@@ -105,6 +105,7 @@ margin: 0;
     text-decoration: none;
     color: #fff;
     transition: color 0.2s ease-in;
+    margin-right: -220px;
 }
 .account:hover {
     color: #fbd784;
@@ -291,6 +292,7 @@ margin: 0;
 }
 .article-img img{
     display: block;
+    
 
 }
 .footer {
